@@ -8,7 +8,7 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cloud.channels.service</groupId>
+    <groupId>cloud</groupId>
     <artifactId>channels-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>channels-service</name>
