@@ -13,14 +13,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "channels")
+@Table(name = "chforms")
 public class Channel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
-    private User user;
 
     private LocalDateTime createdAt;
     private String name;

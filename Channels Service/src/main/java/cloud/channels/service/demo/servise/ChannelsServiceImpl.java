@@ -16,14 +16,10 @@ public class ChannelsServiceImpl implements ChannelsService {
     @Autowired
     private ChannelsRepository channelsRepository;
 
-    @Override
-    public List<ChannelDto> getChannels(Long id) {
-        return from(channelsRepository.findAllByUserId(id));
-    }
 
     @Override
     public ChannelDto getConcreteChannel(Long channelId) {
-        Channel channel = channelsRepository.getOne(channelId);
+        Channel channel = channelsRepository.findOneById(channelId);
         return from(channel);
     }
 

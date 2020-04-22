@@ -6,8 +6,6 @@ import java.util.List;
 public interface ChannelsService {
 
 
-    List<ChannelDto> getChannels(Long id);
-
     ChannelDto getConcreteChannel(Long channelId);
 
     List<ChannelDto> search(String name);

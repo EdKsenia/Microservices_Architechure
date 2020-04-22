@@ -7,8 +7,6 @@ import java.util.List;
 
 
 public interface ChannelsRepository extends JpaRepository<Channel, Long> {
-    Channel findOneByUserId(Long user);
     Channel findOneById(Long id);
     List<Channel> findAll();
-    List<Channel> findAllByUserId(Long id);
 }
