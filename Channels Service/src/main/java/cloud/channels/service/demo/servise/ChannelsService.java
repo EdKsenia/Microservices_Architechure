@@ -6,7 +6,7 @@ import java.util.List;
 public interface ChannelsService {
 
 
-    List<ChannelDto> getChannels();
+    List<ChannelDto> getChannels(Long id);
 
     ChannelDto getConcreteChannel(Long channelId);
 

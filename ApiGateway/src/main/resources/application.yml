@@ -6,6 +6,7 @@ zuul:
       path: /channels-management/**
       serviceId: channels-service
 
+
 spring:
   application:
     name: api-gateway

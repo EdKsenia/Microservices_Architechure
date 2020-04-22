@@ -17,8 +17,8 @@ public class ChannelsServiceImpl implements ChannelsService {
     private ChannelsRepository channelsRepository;
 
     @Override
-    public List<ChannelDto> getChannels() {
-        return from(channelsRepository.findAll());
+    public List<ChannelDto> getChannels(Long id) {
+        return from(channelsRepository.findAllByUserId(id));
     }
 
     @Override
